@@ -9,7 +9,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
-// Define the MyResponsiveBump component
+
 const MyResponsiveBump = (props: any) => {
   return (
     <ResponsiveBump
@@ -56,7 +56,6 @@ const MyResponsiveBump = (props: any) => {
   );
 }
 
-// Define the General component
 export default function General() {
   const data = [
     {

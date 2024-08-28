@@ -3,7 +3,12 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ResponsiveCalendar } from "@nivo/calendar";
 
-const MyResponsiveCalendar = ({ data }) => (
+interface CalendarData {
+  day: string;
+  value: number;
+}
+
+const MyResponsiveCalendar = ({ data }: { data: CalendarData[] }) => (
   <ResponsiveCalendar
     data={data}
     from="2024-01-01"
@@ -20,7 +25,7 @@ const MyResponsiveCalendar = ({ data }) => (
 
 export default function Calendar() {
   function generateDateForYear2024() {
-    const data = [];
+    const data: CalendarData[] = [];
     const startDate = new Date("2024-01-01");
     const endDate = new Date("2024-12-31");
 
