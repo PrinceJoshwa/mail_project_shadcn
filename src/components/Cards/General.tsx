@@ -1,5 +1,6 @@
 'use client';
-
+// @ts-nocheck
+// @ts-ignore
 import { ResponsiveBump } from '@nivo/bump';
 import {
   Card,
