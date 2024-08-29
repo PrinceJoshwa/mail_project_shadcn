@@ -10,10 +10,9 @@ import {
 } from "@/components/ui/card";
 
 
-const MyResponsiveBump = (props: any) => {
-  return (
-    <ResponsiveBump
-      data={props.data}
+const MyResponsiveBump = ({data}) => (
+  <ResponsiveBump
+      data={data}
       colors={{ scheme: 'spectral' }}
       lineWidth={3}
       activeLineWidth={6}
@@ -27,34 +26,36 @@ const MyResponsiveBump = (props: any) => {
       activePointBorderWidth={3}
       pointBorderColor={{ from: 'serie.color' }}
       axisTop={{
-        tickSize: 5,
-        tickPadding: 5,
-        tickRotation: 0,
-        legend: '',
-        legendPosition: 'middle',
-        legendOffset: -36,
+          tickSize: 5,
+          tickPadding: 5,
+          tickRotation: 0,
+          legend: '',
+          legendPosition: 'middle',
+          legendOffset: -36,
+          truncateTickAt: 0
       }}
       axisBottom={{
-        tickSize: 5,
-        tickPadding: 5,
-        tickRotation: 0,
-        legend: '',
-        legendPosition: 'middle',
-        legendOffset: 32,
+          tickSize: 5,
+          tickPadding: 5,
+          tickRotation: 0,
+          legend: '',
+          legendPosition: 'middle',
+          legendOffset: 32,
+          truncateTickAt: 0
       }}
       axisLeft={{
-        tickSize: 5,
-        tickPadding: 5,
-        tickRotation: 0,
-        legend: 'ranking',
-        legendPosition: 'middle',
-        legendOffset: -40,
+          tickSize: 5,
+          tickPadding: 5,
+          tickRotation: 0,
+          legend: 'ranking',
+          legendPosition: 'middle',
+          legendOffset: -40,
+          truncateTickAt: 0
       }}
       margin={{ top: 40, right: 100, bottom: 40, left: 60 }}
       axisRight={null}
-    />
-  );
-}
+  />
+)
 
 export default function General() {
   const data = [
